@@ -3,12 +3,12 @@ package dao;
 import models.Author;
 
 import java.sql.SQLException;
-import java.util.Collection;
+import java.util.List;
 
 public interface AuthorDAO {
-    public void addAuthor(Author author) throws SQLException;
-    public void updateAuthor (Long id, Author author) throws SQLException;
-    public Author getAuthorById(Long id) throws SQLException;
-    public Collection getAllAuthors() throws SQLException;
-    public void deleteAuthor(Author author) throws SQLException;
+    void addAuthor(Author author) throws SQLException;
+    void updateAuthor (Author author) throws SQLException;
+    Author getAuthorById(Long id) throws SQLException;
+    List<Author> getAllAuthors() throws SQLException;
+    void deleteAuthor(Author author) throws SQLException;
 }
