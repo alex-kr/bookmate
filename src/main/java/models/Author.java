@@ -1,11 +1,11 @@
 package models;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name="authors")
-public class Author {
-
+public class Author implements Serializable{
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
