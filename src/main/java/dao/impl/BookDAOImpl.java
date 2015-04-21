@@ -1,7 +1,9 @@
 package dao.impl;
 
 import dao.BookDAO;
+
 import models.Book;
+
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;

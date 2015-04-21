@@ -1,7 +1,9 @@
 package dao.impl;
 
 import dao.UserDAO;
+
 import models.User;
+
 import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
