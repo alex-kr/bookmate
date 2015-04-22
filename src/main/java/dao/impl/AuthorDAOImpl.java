@@ -6,7 +6,6 @@ import models.Author;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import util.HibernateUtil;
 
 import java.sql.SQLException;
