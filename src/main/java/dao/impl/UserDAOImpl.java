@@ -70,10 +70,7 @@ public class UserDAOImpl implements UserDAO {
         return user;
     }
 
-    /*
-    * returns null if user doesn't exist
-    *
-    **/
+
     @Override
     public User getUserByNickname(String nickname) throws SQLException {
         Session session = null;
