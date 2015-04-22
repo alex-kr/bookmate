@@ -7,17 +7,20 @@ import java.io.Serializable;
 @Table(name = "book")
 public class Book implements Serializable{
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name="title")
+    @Column(name = "title")
     private String title;
 
+    @Column(name = "genre")
+    private String genre;
+
     @ManyToOne
-    @JoinColumn(name="author_id")
+    @JoinColumn(name = "author_id")
     private Author author;
 
-    @Column(name="description")
+    @Column(name = "description")
     private String description;
 
 
@@ -51,5 +54,13 @@ public class Book implements Serializable{
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 }

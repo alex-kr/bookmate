@@ -2,7 +2,7 @@ create table user (
   id                        bigint auto_increment not null,
   name                      varchar(255),
   nickname                  varchar(255),
-  isAdmin                   boolean,
+  is_admin                  boolean,
   password                  varchar(255),
   constraint pk_user primary key (id))
 ;
@@ -17,6 +17,7 @@ create table author (
 create table book (
   id                        bigint auto_increment not null,
   title                     varchar(255),
+  genre                     varchar(255),
   description               varchar(3000),
   author_id                 bigint,
   constraint pk_book primary key (id))
